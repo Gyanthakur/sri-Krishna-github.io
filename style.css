@@ -1,0 +1,59 @@
+* {
+	margin: 0;
+	font-family: "IBM Plex Sans", Serif;
+	color: #fff;
+}
+body {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	background: url(bg.webp) no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+body:before {
+	content: "";
+	width: 100%;
+	left: 0;
+	right: 0;
+	position: absolute;
+	height: 100vh;
+	background: url(splash.webp) no-repeat;
+	background-size: cover;
+	background-position: center;
+	mix-blend-mode: screen;
+}
+
+h1 {
+	font-size: 100px;
+	font-weight: 600;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+h2 {
+	font-size: 35px;
+}
+h1 > img {
+	width: 100%;
+	max-width: 80px;
+}
+
+div#text-bg {
+	max-width: 480px;
+}
+.animationTopBottom {
+	animation: animationTopBottom 2s linear forwards;
+}
+@keyframes animationTopBottom {
+	0% {
+		transform: translateY(-500%);
+	}
+	100% {
+		transform: translateY(0%);
+	}
+}
